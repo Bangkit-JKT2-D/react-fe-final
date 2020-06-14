@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.full {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 5px !important;
+  padding: 10px !important;
+  border: none !important;
+  background-color: lightgray !important;
+  color: black !important;
+}
