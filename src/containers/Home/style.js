@@ -26,4 +26,9 @@ export const HomeContainer = styled.div`
     background-color: transparent;
     border: none;
   }
+
+  .taken-pic {
+    max-height: 100%;
+    max-width: 100%;
+  }
 `;
