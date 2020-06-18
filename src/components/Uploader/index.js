@@ -73,7 +73,11 @@ const Uploader = () => {
               )}
               {pictures.length > 0 && takenPict.length === 0 && (
                 <div className="flex column center relative">
-                  <img src={pictures[0].src.base64} alt={pictures[0].name} />
+                  <img
+                    src={pictures[0].src.base64}
+                    className="taken-pic"
+                    alt={pictures[0].name}
+                  />
                   <button
                     type="button"
                     className="absolute remove"
