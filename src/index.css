@@ -35,10 +35,23 @@ code {
   width: 100%;
 }
 
+.full-vw {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .btn {
   border-radius: 5px !important;
   padding: 10px !important;
   border: none !important;
   background-color: lightgray !important;
   color: black !important;
+}
+
+.w70 {
+  width: 7em;
 }

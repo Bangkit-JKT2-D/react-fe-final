@@ -15,13 +15,15 @@ const progress = {
   start: state => {
     return {
       ...state,
-      loading: true
+      loading: true,
+      msg: undefined
     };
   },
   error: (state, action) => {
     return {
       ...state,
-      error: action.error
+      error: action.error,
+      msg: undefined
     };
   },
   success: (state, action) => {
@@ -43,7 +45,7 @@ const predictReducer = (state = initialState, action) => {
     case START_PREDICT:
       return progress.start(state);
     case SUCCESS_PREDICT:
-      return progress.success(state);
+      return progress.success(state, action);
     case FAIL_PREDICT:
       return progress.error(state, action);
     case FINISH_PREDICT:
