@@ -29,7 +29,8 @@ const progress = {
   success: (state, action) => {
     return {
       ...state,
-      msg: action.msg
+      msg: action.msg,
+      loading: false
     };
   },
   finish: state => {

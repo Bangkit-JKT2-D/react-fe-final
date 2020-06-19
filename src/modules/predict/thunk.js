@@ -15,7 +15,7 @@ export const predictThunk = {
       body.then(res => {
         dispatch(predictAction.success(res.data));
       });
-      dispatch(predictAction.finish());
+      // dispatch(predictAction.finish());
     };
   }
 };

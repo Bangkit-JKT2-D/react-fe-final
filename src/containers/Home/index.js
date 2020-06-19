@@ -29,6 +29,7 @@ class Home extends React.Component {
 Home.propTypes = {};
 
 function mapStateToProps(state) {
+  console.log(state);
   return {
     loading: state.predict.loading,
     res: state.predict.msg
